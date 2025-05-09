@@ -432,15 +432,15 @@
         .subscribem-container {
             background-color: white;
             height: auto;
-            padding-top: 5rem;
-            padding-left: 10rem;
-            padding-bottom: 3rem;
+            padding-top: 4rem;
+            padding-left: 5rem;
+            padding-bottom: 4rem;
 
         }
 
         .midcontainer {
             background-color: #e0e0e0;
-            width: 1000px;
+            width: 1088px;
             height: 450px;
             border-radius: 15px;
 
@@ -448,28 +448,84 @@
         }
 
         .email {
-            margin-left: 35px;
+            margin-left: 35px !important;
             border: 1px solid #40c6f3;
             width: 350px;
-            height: 40px;
+            height: 44px;
             border-bottom-left-radius: 18px;
             border-top-left-radius: 18px
+        }
+
+        .email-container {
+            display: flex;
+            gap: 0 !important;
         }
 
         #button-subscribe {
             border: 1px solid #40c6f3;
             background-color: #03acd2;
-            width: 82px;
-            height: 40px;            
+            width: 83px;
+            height: 44px;
             border-radius: 0%;
             border-bottom-right-radius: 18px;
             border-top-right-radius: 18px;
+            padding-left: 0%;
+
+
 
         }
-        #sub-img{
-            width: 50px;
-            height: 30px;
-            padding-left: 0%;
+
+        #sub-img {
+            width: 330px;
+            height: 430px;
+            margin-top: 20px;
+            margin-left: 6rem;
+            align-items: end;
+            justify-content: end;
+            margin-bottom: 0%;
+            padding-top: 3rem;
+
+        }
+
+        .blogcontainermain {
+            background-color: rgb(250, 253, 255);
+            border-radius: 0%;
+            padding-bottom: 3rem;
+        }
+
+
+        #blog-icon {
+            color: #40c6f3;
+        }
+
+        .blog-btn {
+            border: 0;
+            color: #40c6f3;
+
+        }
+
+        .blog-read :hover {
+            color: #71e4fd;
+
+        }
+
+        .post-title {
+            color: #31476e;
+            font-weight: 800;
+            font-size: 20px;
+            text-align: justify;
+
+        }
+
+
+        .post-title:hover {
+            color: #71e4fd;
+
+        }
+
+        .blogpostimg:hover {
+            animation: blogpost 0.2s linier ease-out;
+
         }
     </style>
 
@@ -1617,19 +1673,24 @@
             <div class="container-fluid">
                 <div class="dontainer">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <h1
-                                style="font-size: 42px; font-weight: 650; text-align:justify; padding-top: 150px; margin-left: 35px;   color: #31476e;">
+                                style="font-size: 42px; font-weight: 650; width: 21rem; text-align:justify; padding-top: 100px; margin-left: 38px;   color: #31476e;">
                                 Subscribe to our newsletter</h1>
                             <p style="text-align: justify; margin-left: 35px; font-size: 16px; ">Proin eget tortor
                                 risus. Mauris blandit aliquet elit, eget
                                 tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.</p>
-
-                            <input type="email" class="email" placeholder="Email address..." aria-label="Email address"
-                                aria-describedby="button-subscribe">
-                            <button class="btn btn-primary p-0 m-0" type="submit" id="button-subscribe">Subscribe</button>
+                            <div class="email-container p-0 m-0">
+                                <input type="email" class="email" placeholder="Email address..."
+                                    aria-label="Email address" aria-describedby="button-subscribe">
+                                <button class="btn btn-primary" type="submit" id="button-subscribe">Subscribe</button>
+                            </div>
                         </div>
-                        
+                        <div class="col-lg-4">
+
+                            <img src="sub.webp" alt="subimg" id="sub-img">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1637,6 +1698,131 @@
         </div>
 
     </div>
+
+    <!-- BLOG POST -->
+    <div class="blogcontainermain">
+
+        <h2
+            style="color: #31476e; text-align: center;  padding-top: 3rem; font-weight: 600; text-decoration: underline;">
+            <b>Recent Blog Posts</b>
+        </h2>
+        <br><br>
+        <p style="text-align: center; font-weight: 400;">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        </p>
+        <div class="blog-container p-5">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="blogcard"
+                                style="width: 22rem; background-color: white; position: relative; box-shadow:1px 1px 7px rgb(217, 211, 211) ">
+                                <img src="blog-post-1.webp" class="card-img-top" alt="blogpost" id="blogpostimg">
+                                <div class="card-body">
+                                    <!--DATE-->
+                                    <div class="blog-date  ">
+                                        <div class=" bg-info text-white d-flex justify-content-center align-items-center"
+                                            style=" position: absolute;margin-left: 233px; top: 12.5rem; width: 103px; height: 35px;">
+                                            December 12</div>
+                                    </div>
+                                    <!--cardtext-->
+                                    <div class="blog-text">
+                                        <h3 class="post-title">
+                                            Eum ad dolor et. Autem aut fugiat debitis
+                                        </h3>
+                                        <div class="blogicon text-muted">
+                                            <i class='bx bx-user' id="blog-icon"></i>
+                                            <span>Julia Parker <span style="margin: 18px;">/</span>
+                                                <i class='bx bx-folder' id="blog-icon"></i>
+                                                <span>politics</span>
+                                        </div>
+                                        <hr>
+                                        <div class="blog-read text-muted">
+
+                                            <p>Read More <i class='bx bx-right-arrow-alt' id="blog-icon"></i></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blogcard"
+                                style="width: 22rem; background-color: white; position: relative;box-shadow:1px 1px 7px rgb(217, 211, 211) ">
+                                <img src="blog-post-2.webp" class="card-img-top" alt="post1">
+                                <div class="card-body">
+                                    <!--DATE-->
+                                    <div class="blog-date  ">
+                                        <div class=" bg-info text-white d-flex justify-content-center align-items-center"
+                                            style=" position: absolute;margin-left: 233px; top: 12.5rem; width: 103px; height: 35px;">
+                                            July 17</div>
+                                    </div>
+                                    <!--cardtext-->
+                                    <div class="blog-text">
+                                        <h3 class="post-title">
+                                            Eum ad dolor et. Autem aut fugiat debitis
+                                        </h3>
+                                        <div class="blogicon text-muted">
+                                            <i class='bx bx-user' id="blog-icon"></i>
+                                            <span>Mario Douglus <span style="margin: 18px;">/</span>
+                                                <i class='bx bx-folder' id="blog-icon"></i>
+                                                <span>sports</span>
+                                        </div>
+                                        <hr>
+                                        <div class="blog-read text-muted">
+
+                                            <p>Read More <i class='bx bx-right-arrow-alt' id="blog-icon"></i></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blogcard"
+                                style="width: 22rem; background-color: white; position: relative; box-shadow:1px 1px 7px rgb(217, 211, 211) ">
+                                <img src="blog-post-3.webp" class="card-img-top" alt="post1">
+                                <div class="card-body">
+                                    <!--DATE-->
+                                    <div class="blog-date  ">
+                                        <div class=" bg-info text-white d-flex justify-content-center align-items-center"
+                                            style=" position: absolute;margin-left: 233px; top: 12.5rem; width: 103px; height: 35px;">
+                                            September 05</div>
+                                    </div>
+                                    <!--cardtext-->
+                                    <div class="blog-text">
+                                        <h3 class="post-title">
+                                            Eum ad dolor et. Autem aut fugiat debitis
+                                        </h3>
+                                        <div class="blogicon text-muted">
+                                            <i class='bx bx-user' id="blog-icon"></i>
+                                            <span>Lisa Hunter <span style="margin: 18px;">/</span>
+                                                <i class='bx bx-folder' id="blog-icon"></i>
+                                                <span>Economics</span>
+                                        </div>
+                                        <hr>
+                                        <div class="blog-read text-muted">
+
+                                            <p>Read More <i class='bx bx-right-arrow-alt' id="blog-icon"></i></p>
+
+                                        </div>
+<!-- testing git -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
