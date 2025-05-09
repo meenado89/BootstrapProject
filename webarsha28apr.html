@@ -535,32 +535,54 @@
             padding-bottom: 3rem;
         }
 
-        .address-form{
-            padding: 3rem;
-        }
-
-        .address-card  {
+        .address-card {
             padding: 2rem;
             box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
             border: 1px solid whitesmoke;
-            box-shadow: 1px 1px 6px #e1e0e0;        
-            border-bottom-color:   #71e4fd;            
-            border-top-color:  #71e4fd;
-            
-
-        }
-        .form-container{
-            padding: 2rem;
-            box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
-            border: 1px solid whitesmoke;
-            box-shadow: 1px 1px 6px #e1e0e0;        
-            border-bottom-color: #71e4fd; 
-                     
+            border-bottom-color: #71e4fd;
             border-top-color: #71e4fd;
+            border-bottom-width: 3px;
+            border-top-width: 3px;
 
         }
-        
-        
+
+        .form-container {
+            padding: 2rem;
+            width: 690px;
+            box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
+            border: 1px solid whitesmoke;
+            box-shadow: 1px 1px 6px #e1e0e0;
+            border-bottom-color: #71e4fd;
+            border-top-color: #71e4fd;
+            border-bottom-width: 3px;
+            border-top-width: 3px;
+        }
+
+        #form-btn {
+            width: 150px;
+            height: 45px;
+            background-color: #40c6f3;
+            font-size: 16px;
+
+        }
+
+        .address-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #31476e;
+        }
+        .address-body{
+            padding: 2px;
+        }
+        #address-icon{
+            background-color: rgba(3, 172, 210, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            color: #71e4fd;
+            padding: 3px;
+            margin: 1px;
+        }
     </style>
 
 
@@ -1868,36 +1890,43 @@
         <p style="text-align: center; font-weight: 400;">
             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>
-        <div class="address-form">
+        <div class="address-form" style="padding: 3rem; padding-left: 7rem;">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-5">
                             <div class="address-card">
-                                <div class="address-body">
-                                    <i class='bx bx-map'></i>
-                                    <h5 class="address-title">Address</h5>
-                                    <p class="address-text">A108 Adam Street, New York, NY 535022
-                                    </p>
+                                <div class="address-body p-3  d-flex">
+                                    <i class='bx bx-map' id="address-icon"></i>
+                                    <div>
+                                        <h5 class="address-text ">Address</h5>
+                                        <p class="address-text1">A108 Adam Street, New York, NY 535022
+                                        </p>
+                                    </div>
                                 </div>
 
-                                <div class="address-body">
-                                    <i class='bx bx-phone'></i>
-                                    <h5 class="address-title">Contact</h5>
-                                    <p class="address-text">+1 5589 55488 55</p>
+                                <div class="address-body p-3  d-flex">
+                                    <i class='bx bx-phone' id="address-icon"></i>
+                                    <div>
+                                        <h5 class="address-text">Contact</h5>
+                                        <p class="address-text1">+1 5589 55488 55</p>
+                                    </div>
                                 </div>
-                                <div class="address-body">
-                                    <i class='bx bx-envelope'></i>
-                                    <h5 class="address-title">Email</h5>
-                                    <p class="address-text">info@example.com</p>
+                                <div class="address-body p-3  d-flex">
+                                    <i class='bx bx-envelope' id="address-icon"></i>
+                                    <div>
+                                        <h5 class="address-text">Email</h5>
+                                        <p class="address-text1">info@example.com</p>
+                                    </div>
                                 </div>
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                    frameborder="0" style="border:0; width: 74%; height: 270px;" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    frameborder="0" style="border:0; width: 100%; height: 270px; padding-top: 1rem;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-7">
                             <div class="form-container">
                                 <form class="row g-3">
                                     <div class="col-md-6">
@@ -1918,8 +1947,8 @@
                                         <textarea class="form-control" name="message" rows="10" id="message-field"
                                             required></textarea>
                                     </div>
-                                    <div class="col-md-6">
-                                        <button type="submit" class="btn btn-primary ">Send
+                                    <div style="padding-left: 270px;">
+                                        <button type="submit" class="btn text-white" id="form-btn">Send
                                             Message</button>
                                     </div>
                                 </form>
