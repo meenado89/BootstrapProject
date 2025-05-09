@@ -8,7 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <title>Bootstrap Project</title>
     <style>
         #navbar {
             background: #334b74;
@@ -530,41 +530,37 @@
         }
 
         /* contact */
-        .cantactm-container {
-            background-color: #f1f1f2;
-            height: auto;
+        .contact-container {
+            background-color: white;
             padding-bottom: 3rem;
-
         }
 
-        .address-card {
-            width: 20rem;
-            background-color: white;
+        .address-form{
+            padding: 3rem;
+        }
+
+        .address-card  {
             padding: 2rem;
-            justify-items: left;
-            align-items: left;
-        }
+            box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
+            border: 1px solid whitesmoke;
+            box-shadow: 1px 1px 6px #e1e0e0;        
+            border-bottom-color:   #71e4fd;            
+            border-top-color:  #71e4fd;
+            
 
-        #adresscard-icon {
-            color: #5db9ce;
-            background-color: rgba(221, 244, 251, 0.6);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
         }
-
-        #adresscard-icon:hover {
-            color: #71e4fd;
-        }
-
-        .address-form {
-            background-color: white;
+        .form-container{
             padding: 2rem;
-        }
+            box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
+            border: 1px solid whitesmoke;
+            box-shadow: 1px 1px 6px #e1e0e0;        
+            border-bottom-color: #71e4fd; 
+                     
+            border-top-color: #71e4fd;
 
-        .contact-form {
-        padding-left: 3rem;
-            }
+        }
+        
+        
     </style>
 
 
@@ -1861,8 +1857,9 @@
         </div>
     </div>
 
-    <!-- contact -->
-    <div class="cantactm-container">
+
+    <!-- CONTACT -->
+    <div class="contact-container">
         <h2
             style="color: #31476e; text-align: center;  padding-top: 3rem; font-weight: 600; text-decoration: underline;">
             <b>CONTACT</b>
@@ -1871,93 +1868,66 @@
         <p style="text-align: center; font-weight: 400;">
             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>
-        <div class="contact-form ">
-
-            <div class="container-fluid ">
+        <div class="address-form">
+            <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="addresscard p-5">
-                                <div class="address-card">
-                                    <div class="addrescard-text d-md-flex">
-                                        <i class='bx bx-map bx-sm m-1 p-3' id="adresscard-icon"></i>
-                                        <div class="cardm-text m-2">
-                                            <h6 style="color: #37517e;font-size: 20px; font-weight: 700;">Address</h6>
-
-                                            <p>
-                                                A108 Adam Street, New York, NY 535022
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="adresscard-text d-md-flex mb-4">
-                                        <i class='bx bx-phone bx-sm m-1 p-3' id="adresscard-icon"></i>
-                                        <div class="cardm-text">
-                                            <h6 style="color: #37517e;font-size: 20px; font-weight: 700;">Call Us
-                                            </h6>
-                                            <p> +1 5589 55488 55</p>
-                                        </div>
-                                    </div>
-                                    <div class="addresscard-text d-md-flex mb-4">
-                                        <i class='bx bx-envelope bx-sm m-1 p-3 ' id="adresscard-icon"></i>
-                                        <div class="cardm-text">
-                                            <h6 style="color: #37517e;font-size: 20px; font-weight: 700;">Contact Us
-                                                <h6>
-                                                    <p>info@example.com</p>
-                                        </div>
-                                    </div>
-
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                        frameborder="0" style="border:0; width: 140px; height: 270px;"
-                                        allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                        <div class="col-sm-6">
+                            <div class="address-card">
+                                <div class="address-body">
+                                    <i class='bx bx-map'></i>
+                                    <h5 class="address-title">Address</h5>
+                                    <p class="address-text">A108 Adam Street, New York, NY 535022
+                                    </p>
                                 </div>
+
+                                <div class="address-body">
+                                    <i class='bx bx-phone'></i>
+                                    <h5 class="address-title">Contact</h5>
+                                    <p class="address-text">+1 5589 55488 55</p>
+                                </div>
+                                <div class="address-body">
+                                    <i class='bx bx-envelope'></i>
+                                    <h5 class="address-title">Email</h5>
+                                    <p class="address-text">info@example.com</p>
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                                    frameborder="0" style="border:0; width: 74%; height: 270px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-container">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputName" class="form-label" required>Your Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="inputSubject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-12 pb-2">
+                                        <label for="form-message" class="form-message pb-2">Message</label>
+                                        <textarea class="form-control" name="message" rows="10" id="message-field"
+                                            required></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary ">Send
+                                            Message</button>
+                                    </div>
+                                </form>
 
                             </div>
-
-
                         </div>
-
-                        <div class="address-form col-6">
-                            <form class="row g-4">
-                                <div class="col-md-6">
-                                    <label for="inputName" class="form-label">Your Name</label>
-                                    <input type="name" class="form-control" id="inputName">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputSubject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="inputAddress">
-                                </div>
-
-
-                                <div class="col-12">
-                                    <text for="inputMessage" class="form-label">Message</text>
-                                    <textarea type="text" class="form-control"></textarea>
-
-                                </div>
-                                <div class="col-12 p-5">
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                </div>
-                            </form>
-                        </div>
-
                     </div>
-
-
-
-
                 </div>
-
-<!-- test git
- bjhbjhbyyvbhgvgfdctfgvhb 
- buhbuhbiujbnkjn kj -->
-
             </div>
 
         </div>
