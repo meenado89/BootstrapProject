@@ -210,6 +210,7 @@
             background: rgba(55, 81, 126, 0.7);
         }
 
+        /* portfolio */
         .portfoliomcontainer {
             background-color: white;
 
@@ -537,6 +538,7 @@
 
         .address-card {
             padding: 2rem;
+            height: auto;
             box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
             border: 1px solid whitesmoke;
             border-bottom-color: #71e4fd;
@@ -549,6 +551,7 @@
         .form-container {
             padding: 2rem;
             width: 690px;
+            height: auto;
             box-shadow: -1.5px 4px 13px -1.5px rgba(155, 155, 155, 0.39);
             border: 1px solid whitesmoke;
             box-shadow: 1px 1px 6px #e1e0e0;
@@ -570,18 +573,51 @@
             font-size: 20px;
             font-weight: 700;
             color: #31476e;
+            padding-left: 1rem;
         }
-        .address-body{
+
+        .address-text1 {
+            padding-left: 1rem;
+        }
+
+        .address-body {
             padding: 2px;
         }
-        #address-icon{
+
+        #address-icon {
             background-color: rgba(3, 172, 210, 0.1);
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             border-radius: 50px;
-            color: #71e4fd;
-            padding: 3px;
+            color: #57b0c5;
+            padding: 10px;
             margin: 1px;
+        }
+
+        #address-icon:hover {
+            color: white;
+            background-color: #40c6f3;
+        }
+
+        .form-control {
+            height: 45px;
+        }
+
+        .form-label {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #message-field {
+            height: 270px;
+        }
+
+        /* newsletter */
+
+        .newsm-container {
+            background-color: #d3dae7;
+            padding: 2rem;
+
         }
     </style>
 
@@ -1897,7 +1933,7 @@
                         <div class="col-md-5">
                             <div class="address-card">
                                 <div class="address-body p-3  d-flex">
-                                    <i class='bx bx-map' id="address-icon"></i>
+                                    <i class='bx bx-map bx-sm' id="address-icon"></i>
                                     <div>
                                         <h5 class="address-text ">Address</h5>
                                         <p class="address-text1">A108 Adam Street, New York, NY 535022
@@ -1906,14 +1942,14 @@
                                 </div>
 
                                 <div class="address-body p-3  d-flex">
-                                    <i class='bx bx-phone' id="address-icon"></i>
+                                    <i class='bx bx-phone bx-sm' id="address-icon"></i>
                                     <div>
-                                        <h5 class="address-text">Contact</h5>
-                                        <p class="address-text1">+1 5589 55488 55</p>
+                                        <h5 class="address-text">Call Us</h5>
+                                        <p class="address-text1 ">+1 5589 55488 55</p>
                                     </div>
                                 </div>
                                 <div class="address-body p-3  d-flex">
-                                    <i class='bx bx-envelope' id="address-icon"></i>
+                                    <i class='bx bx-envelope bx-sm' id="address-icon"></i>
                                     <div>
                                         <h5 class="address-text">Email</h5>
                                         <p class="address-text1">info@example.com</p>
@@ -1928,7 +1964,7 @@
                         </div>
                         <div class="col-7">
                             <div class="form-container">
-                                <form class="row g-3">
+                                <form class="row g-4">
                                     <div class="col-md-6">
                                         <label for="inputName" class="form-label" required>Your Name</label>
                                         <input type="text" class="form-control">
@@ -1961,6 +1997,22 @@
 
         </div>
 
+    </div>
+    <!-- newsletter? sub not working -->
+    <div class="newsm-container">
+        <h2 style="color: #31476e; text-align: center; font-weight: 600; font-family: sans-serif; font-size: 28px;">
+            <b>JOIN OUR NEWS LETTER</b>
+        </h2>
+        <p style="text-align: center; font-weight: 400;">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        </p>
+        <form class="submit-form ">
+            <div style="display: flex;justify-content: center;">
+              <input type="email" name="email" style=" height: 45px;border: 0px; width: 36rem; border-radius: 22px; box-shadow: 1px 1px 2px gray;">
+              <input type="submit" value="Subscribe" style="width: 7rem;">  
+            </div>
+        </form>
+        
     </div>
 
 
