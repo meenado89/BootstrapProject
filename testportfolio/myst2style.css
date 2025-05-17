@@ -167,19 +167,13 @@ body {
   color: #f0e6d2;
   transition: 0.3s ease;
   text-align: center;
-    -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+
 }
 
 .ability-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #00c2cb;
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
+  transform: translateY(-12px);
+  box-shadow: 0 0 26px #60f4fca8 ;
+  -o-transform: translateY(-12px);
 }
 
 .abilitycard-title {
